@@ -10,8 +10,8 @@ palindrome('table')  ===  false
 const palindrome = str => {
   // turn the string to lowercase
   str = str.toLowerCase();
-  // reverse input string and return the result of the
-  // comparisong
+  // reverse input string and return the
+  // result of the comparison
   return (
     str ===
     str
@@ -23,3 +23,12 @@ const palindrome = str => {
 
 palindrome("racecar");
 palindrome("table");
+
+// function palindrome(str) {
+//   const reversed = str
+//     .split("")
+//     .reverse()
+//     .join("");
+
+//   return str === reversed;
+// }
