@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fibonacci - v0</title>
+  </head>
+  <body>
+    <script>
+      /*
+      A Fibonacci sequence is an ordering of numbers where each number is the sum of the preceding two. 
+      For example, the first ten numbers of the Fibonacci sequence are: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
+
+      Write a function that returns the nth entry in the Fibonacci sequence, 
+      where n is a number you pass in as argument to the function.
+      */
+
+      const fibonacci = num => {
+        // if num is either 0 or 1 return num
+        if (num < 2) {
+          return num;
+        }
+        // recursion here
+        return fibonacci(num - 1) + fibonacci(num - 2);
+      };
+
+      console.log(fibonacci(3)); // --> 2
+      console.log(fibonacci(6)); /// --> 8
+      console.log(fibonacci(10)); /// --> 55
+    </script>
+  </body>
+</html>
